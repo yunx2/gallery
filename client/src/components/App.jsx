@@ -76,7 +76,10 @@ class App extends React.Component {
               <div className={style.galleryContainer1}>
                 <Gallery imageClickHandler={this.imageClickHandler} imageHoverHandler={this.imageHoverHandler} imageUnHoverHandler={this.imageUnHoverHandler} id={style.galleryBigImage} images={images.slice(0, 1)} />
                 <div className={style.galleryContainer2}>
-                  <Gallery imageClickHandler={this.imageClickHandler} imageHoverHandler={this.imageHoverHandler} imageUnHoverHandler={this.imageUnHoverHandler} images={images.slice(1)} />
+                  <Gallery imageClickHandler={this.imageClickHandler} imageHoverHandler={this.imageHoverHandler} imageUnHoverHandler={this.imageUnHoverHandler} images={images.slice(1, 3)} />
+                </div>
+                <div className={`${style.galleryContainer2} + ' ' + ${style.galleryContainer3}`}>
+                  <Gallery imageClickHandler={this.imageClickHandler} imageHoverHandler={this.imageHoverHandler} imageUnHoverHandler={this.imageUnHoverHandler} images={images.slice(3, 5)} />
                 </div>
               </div>
             </div>

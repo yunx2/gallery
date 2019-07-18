@@ -26,16 +26,28 @@ img {
 }
 
 .galleryContainer2 {
-  display: flex;
-  flex-wrap: wrap;
+  overflow: hidden;
+  flex: 1 1 auto;
   box-sizing: border-box;
   max-width: 100%;
 }
 
 .galleryContainer2 div {
-  height: 150px;
-  width: 400px;
+  height: 209px;
+  width: 600px;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+  .galleryContainer3 {
+    width: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .galleryContainer2 {
+    width: 0;
+  }
 }
 
 #galleryBigImage img {
@@ -44,9 +56,9 @@ img {
 }
 
 #galleryBigImage {
-  height: 300px;
+  height: 418px;
   overflow: hidden;
-  flex: 1 1 80em;
+  flex: 1 1 auto;
 }
 
 .galleryImage:hover {
