@@ -9,11 +9,11 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "webpack -d --watch",
+    "build": "webpack --watch",
     "seed": "node ./database/seed.js",
-    "start": "node server/index.js",
+    "start": "node ./server/index.js",
     "db": "mysql -h 172.17.0.3 -uroot < ./database/schema.sql",
-    "docker:start": "npm run seed && npm start"
+    "docker:start": "npm start"
   },
   "dependencies": {
     "axios": "^0.19.0",
