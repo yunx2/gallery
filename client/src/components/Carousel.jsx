@@ -21,7 +21,7 @@ class Carousel extends React.Component {
   }
 
   handleKeyPress(e) {
-    const { images, imageClickHandler } = this.props;
+    const { images, imageClickHandler, renderView } = this.props;
     const prevPhoto = images[images.length-1].ImageID;
     const nextPhoto = images[1].ImageID;
     if (e.key === 'ArrowLeft') {
@@ -29,6 +29,9 @@ class Carousel extends React.Component {
     }
     if (e.key === 'ArrowRight') {
       imageClickHandler(nextPhoto);
+    }
+    if (e.keyCode === 27) {
+      renderView('gallery');
     }
   }
 
