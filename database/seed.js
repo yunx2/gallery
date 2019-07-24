@@ -48,7 +48,7 @@ unsplash.getImages('house', (err, houseData) => {
                 console.log('error inserting images');
                 console.log(error.code);
               } else {
-                console.log('survived callback hell');
+                console.log('successfully inserted images');
               }
             });
           }
