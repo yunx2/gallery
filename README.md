@@ -1,6 +1,6 @@
 # Bedroost Gallery Module
 
-> Project description
+Microservice providing images of listing as part of larger home booking application
 
 ## Related Projects
 
